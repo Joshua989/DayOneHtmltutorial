@@ -1,32 +1,202 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cooking website</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>Cooking Website</h1>
-        <h2>cooking website</h2>
-        <h3>cooking website</h3>
-        <h4>cooking website </h4>
-        <h5>cooking website</h5>
-        <h6>cooking website</h6>
-        <p>Lorem ipsum dolor sit, <span>  Lorem ipsum dolor <del>sit amet</del> consectetur <s>adipisicing</s> <u>elit.</u> Odit beatae dolorem ducimus, doloribus facilis nobis,<em> expedita </em>quaerat ipsum omnis aperiam amet? Accusantium optio tempore unde <strong> deserunt, </strong> quam aliquid quos omnis.</span> amet  <i>consectetur</i> adipisicing  <br> elit. Porro,  <b>animi.</b> In facere pariatur molestiae provident at, inventore soluta quam dolorum illo modi officia laborum, obcaecati quas accusantium voluptatum voluptates reiciendis.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Demonstration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+        }
+        article {
+            flex: 2;
+            padding-right: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        aside {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        figure {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        figcaption {
+            font-style: italic;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        details {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #eee;
+        }
+        mark {
+            background-color: yellow;
+        }
+        time {
+            font-weight: bold;
+        }
+        address {
+            font-style: italic;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Semantic HTML Elements Demo</h1>
+        <p>A comprehensive demonstration of semantic HTML5 elements and their proper usage.</p>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="#sections">Sections</a></li>
+            <li><a href="#text">Text Elements</a></li>
+            <li><a href="#embedded">Embedded Content</a></li>
+            <li><a href="#interactive">Interactive Elements</a></li>
+        </ul>
+    </nav>
 
-        <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti dolorum, doloribus officia repudiandae, exercitationem assumenda nisi voluptatibus, illum soluta consectetur cumque obcaecati distinctio beatae itaque? Dolore fugit veritatis maxime! Minus.</blockquote>
-
-       <p>Lorem ipsum dolor sit amet <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nesciunt enim voluptates obcaecati at tenetur eos consequuntur recusandae quam tempore aperiam ipsa laudantium? Aperiam ab, sit perferendis officiis nesciunt recusandae?</q>consectetur adipisicing elit. Accusantium perspiciatis ullam, cum autem exercitationem non labore harum eius deleniti maiores sequi voluptatum animi, voluptates, ex excepturi voluptatem possimus nostrum blanditiis?</p>
-        <p>Lorem ipsum dolor <abbr title="World HEalt Organization">WHO</abbr> sit amet consectetur adipisicing elit. Neque aliquam magni saepe illo iure est sed id, amet sapiente quod doloribus delectus nemo, labore provident corrupti ut molestiae similique reiciendis!</p>
-       
-        <script src="" async defer></script>
-    </body>
+    <main>
+        <article>
+            <h2>What is Semantic HTML?</h2>
+            <p>Semantic HTML uses HTML elements that clearly describe their meaning to both the browser and the developer. Using semantic markup helps with:</p>
+            <ul>
+                <li>Accessibility</li>
+                <li>SEO (Search Engine Optimization)</li>
+                <li>Readability of code</li>
+                <li>Code maintenance</li>
+            </ul>
+            
+            <section id="sections">
+                <h2>Sectioning Elements</h2>
+                <p>These elements define sections in an HTML document:</p>
+                
+                <article>
+                    <h3>Article Element</h3>
+                    <p>The <code>&lt;article&gt;</code> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.</p>
+                </article>
+                
+                <section>
+                    <h3>Section Element</h3>
+                    <p>The <code>&lt;section&gt;</code> element represents a standalone section of a document, which doesn't have a more specific semantic element to represent it.</p>
+                </section>
+            </section>
+            
+            <section id="text">
+                <h2>Text Content Elements</h2>
+                
+                <p>Here's a <mark>highlighted text</mark> using the mark element.</p>
+                
+                <p>This article was published on <time datetime="2025-04-09">April 9, 2025</time>.</p>
+                
+                <blockquote>
+                    <p>Semantic HTML is the foundation of accessible web design.</p>
+                    <cite>- Web Development Best Practices</cite>
+                </blockquote>
+                
+                <details>
+                    <summary>More about semantic text elements</summary>
+                    <p>There are many other semantic text elements such as <code>&lt;em&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;abbr&gt;</code>, and more that help convey meaning.</p>
+                </details>
+            </section>
+            
+            <section id="embedded">
+                <h2>Embedded Content</h2>
+                
+                <figure>
+                    <img src="/api/placeholder/400/300" alt="A placeholder image demonstrating the figure element">
+                    <figcaption>This is a figure caption for the placeholder image</figcaption>
+                </figure>
+            </section>
+            
+            <section id="interactive">
+                <h2>Interactive Elements</h2>
+                
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+        
+        <aside>
+            <h3>Related Information</h3>
+            <p>This sidebar contains additional information about semantic HTML.</p>
+            
+            <h4>Benefits of Semantic HTML</h4>
+            <ol>
+                <li>Better accessibility</li>
+                <li>Improved SEO</li>
+                <li>Cleaner code</li>
+                <li>Easier maintenance</li>
+            </ol>
+            
+            <p>For more information, check out the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN Web Docs</a>.</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>Semantic HTML Demonstration &copy; 2025</p>
+        <address>
+            Contact: <a href="mailto:info@example.com">info@example.com</a>
+        </address>
+    </footer>
+</body>
 </html>

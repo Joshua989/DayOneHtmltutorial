@@ -1,0 +1,9 @@
+
+div{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border: 5px solid #e39595;
+    background: hsl(175, 36%, 40%);
+    color: black;
+}
